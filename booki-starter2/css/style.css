@@ -39,6 +39,8 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding-left: 69%;
+
 }
 
 nav div {
@@ -195,6 +197,11 @@ nav div {
     background: var(--blue-light, #DEEBFF);
 }
 
+.info{
+    color: #0065FC;
+    border-radius:50%;
+    border: 3px solid #D9D9D9;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -392,7 +399,7 @@ footer a {
     color: #000000;
 }
 
-/* Le code ci-dessous correspond Ã  la version responsive uniquement */
+/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -427,10 +434,88 @@ footer a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-}
 
+    
+    
+    /*activites*/
+
+
+
+    .activites-card img {
+        height:65%;
+        margin-bottom:none;
+
+    }
+
+    .activites-card .cards{
+
+    }
+    .activites-card .img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .activites-card {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 864PX;
+        padding-left: 2%;
+        padding-right: 2%;
+        height: 270PX;
+        }
+    }    
+
+    .activites-card h3 {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom:0px;
+    }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
-}
+    
+   
+    .main-container {
+        flex-direction: column;
+    }
 
+    .populaires {
+        width: 100%;
+        order: 1; 
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px; 
+        padding-top: 20px;
+    }
+
+    .hebergements {
+        width: 100%;
+        order: 2;
+
+    }
+
+    .activites{
+        width: 100%;
+        order: 3;
+    }
+
+    .activites-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        order:4;
+        margin-top: 20px; 
+
+    }
+  
+}
